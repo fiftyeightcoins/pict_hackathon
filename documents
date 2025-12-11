@@ -33,3 +33,9 @@ Will will modify it according to our future req
 
 
 
+
+21:40
+
+Built the ml setup, basicaly node routes r expecting a json resposne from the ml model, the routes r able to get the response from the python file
+
+
