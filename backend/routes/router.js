@@ -74,4 +74,35 @@ router.post('/login',async (req,res)=>{
     }
 })
 
+
+
+//ml thing
+
+//import path from "path";
+const {exec}=require("child_process");
+const {stdout}=require("process");
+
+const pythonfilepath=path.join(__dirname, "../../ml/ml_model.py");
+
+
+
+router.get('/ml',(req,res)=>{
+
+    
+        exec(`python3 ${pythonfilepath}`,(err,stdout)=>{
+            if(err){
+                console.log(err)
+                res.status(401).send(`ml is not working: ${err}`)
+            }else{
+                console.log(stdout)
+                res.status(201).send(stdout)
+                const dataFromml=JSON.parse(stdout.toString())
+                console.log(dataFromml)
+            }
+        })
+    
+
+
+})
+
 module.exports=router
