@@ -1,0 +1,35 @@
+date:11/12/25
+
+Subject : 
+initializrion of backend, mongo as a db,routes initiazlied,models initialized,separete frontend and backend
+	
+The whole project will be require atleast three server:
+     1)frontend
+     2)backend
+     3)ml
+
+Front end and backend will be using different servers to simplify the project, also free web hosting platforms doesnt allow any live changes on server - ie we cannot add or delete or update anything on the server
+
+
+Here the backend basically includes:
+
+  Models 
+	To deine the user schema extaly what all info is associated with the user 
+
+ Database used is mongo (in the project i have used the local mongo db, but i will
+  update it later by using a online db)
+
+Routes:
+
+Till now, tehre routes
+Home route 
+Adduser
+Listuser
+login
+
+Will will modify it according to our future req
+
+
+
+
+
