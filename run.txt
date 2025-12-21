@@ -1,0 +1,6 @@
+backend runs on port 3004
+root/backend/   node index.js
+
+ml run on port 5000
+
+root/ml/api/  python ml_api.py
